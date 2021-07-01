@@ -5,7 +5,7 @@ const ExchangeRate = () => {
 
     const [data,setData]=useState([]);
     const array=[];
-    const  KurCek = async () => {
+    const  ExchangeRates = async () => {
         try {
             const parseString = await require('react-native-xml2js').parseString;
             const response = await fetch('https://www.tcmb.gov.tr/kurlar/today.xml');
@@ -28,7 +28,7 @@ const ExchangeRate = () => {
 
     useEffect(()=>{
 
-      KurCek();
+      ExchangeRates();
 
     },[])
 

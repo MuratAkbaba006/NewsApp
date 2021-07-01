@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import NewsList from '../Lists/NewsList'
 import Home from '../Screens/Home'
 import NewsDetail from '../Screens/NewsDetail'
+import HoroscopesDetail from '../Screens/HoroscopesDetail'
 
 const AppStack=createStackNavigator()
 
@@ -27,7 +28,8 @@ const AppNavigator = () => {
             <AppStack.Screen options={{headerShown:false}} name='Home' component={Home}/>
             <AppStack.Screen name='NewsDetail' component={NewsDetail}/>
             <AppStack.Screen name='NewsList' component={NewsList}/>
-        </AppStack.Navigator>
+            <AppStack.Screen name='HoroscopesDetail' component={HoroscopesDetail} />
+            </AppStack.Navigator>
     )
 }
 

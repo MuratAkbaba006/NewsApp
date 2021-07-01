@@ -12,6 +12,7 @@ import ScienceNews from '../ScienceNews'
 import EntertainmentNews from '../EntertainmentNews';
 import useNews from '../../Hooks/useNews';
 import ActivityIndicator from '../Common/ActivityIndicator';
+import Horoscopes from '../../api/Horoscopes';
 
 const Home = () => {
     const [isSearchFocused,setIsSearchFocused]=useState(false)
@@ -42,6 +43,7 @@ const Home = () => {
             <CategoryIcon/>
             <FeaturesNews item={featuredNews}/>
             <ExchangeRate/> 
+            <Horoscopes/>
             <BreakingNews data={breakingNews}/>
             <PoliticalNews data={politicalNews}/>
             <TechNews data={techNews}/>

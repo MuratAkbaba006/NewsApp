@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import NewsApi from '../api/NewsApi'
+import ExchangeRate from '../api/ExchangeRate';
 const useNews = () => {
     const [allnews,setAllnews]=useState([]);
     const [featuredNews,setFeaturedNews]=useState({});
